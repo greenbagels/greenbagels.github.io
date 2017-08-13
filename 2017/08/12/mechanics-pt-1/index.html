@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+  <title>Mechanics, Part I: Generalized Coordinates, the Principle of Stationary Action, and the Lagrangian </title>
+  <meta name="description" content="(Note: This is the first part of a series of blog posts accompanying my reading through L.D. Landau and E.M. Lifshits’z Course of Theoretical Physics)">
+  
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/08/12/mechanics-pt-1/">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="ganoo, wizards, and daemons" href="/feed.xml">
+
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="Mechanics, Part I: Generalized Coordinates, the Principle of Statio...">
+  <meta name="twitter:description" content="(Note: This is the first part of a series of blog posts accompanying my reading through L.D. Landau and E.M. Lifshits’z Course of Theoretical Physics)">
+  
+  
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Bitter:400,700,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">ganoo, wizards, and daemons</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/about/">About</a>
+      
+        
+        <a class="page-link" href="/archives/">Archives</a>
+      
+        
+        <a class="page-link" href="https://github.com/greenbagels">GitHub</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+      <h1 class="post-title" itemprop="name headline">Mechanics, Part I: Generalized Coordinates, the Principle of Stationary Action, and the Lagrangian </h1>
+    
+    <p class="post-meta"><time datetime="2017-08-12T23:21:59+00:00" itemprop="datePublished">Aug 12, 2017</time> • 
+  
+  
+    
+      <a href="/categories/physics/">physics</a>,
+    
+  
+    
+  
+    
+  
+
+  
+  
+    
+  
+    
+      <a href="/categories/college/">college</a>,
+    
+  
+    
+  
+
+  
+  
+    
+  
+    
+  
+    
+      <a href="/categories/research/">research</a>
+    
+  
+
+</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>(<strong>Note:</strong> This is the first part of a series of blog posts accompanying my reading through L.D. Landau and E.M. Lifshits’z <em>Course of Theoretical Physics</em>)</p>
+
+<p>We begin our discussion of mechanics by examining (systems of) particles whose positions in space can be described using a radius vector \(\vec{r}\) whose Cartesian components are the \(x\), \(y\), and \(z\) coordinates.
+We further denote the <em>velocity</em> of a particle as the first time-derivative \(\frac{\text{d}}{\text{d}t}(\vec{r})\) and the <em>acceleration</em> of a particle as the second time-derivative \(\frac{\text{d}^2}{\text{d}t^2}(\vec{r})\).</p>
+
+<p>Simple enough — most individuals who have been exposed to a calculus-based physics course (or just a calculus class in general) will remember similar definitions as basic applications of derivatives.
+For consistency sake, we will adopt Newton’s notation for differentiation (as is common in physics applications) by denoting time derivatives with dots over quantities (i.e. \(\vec{v} \equiv \dot{\vec{r}}\))</p>
+
+<p>Naturally it arises that we must describe the state of a system with \(N\) particles as a function of some <em>degrees of freedom</em>, a number of quantities that completely determine a given system’s state (quite a tautology, I know). To do so, we must specify \(N\) position vectors, or equivalently, \(3N\) coordinates. Note that such coordinates need not be Cartesian, as spherical, cylindrical, or any other curvilinear coordinate system would also work to represent particles in space (well, most curvilinear coordinates will require more delicate treatment, but we’ll address those as we arrive).</p>
+
+<p>A set of coordinates \(\vec{q} \equiv (q_1, q_2, …, q_n)\) that uniquely define the state of a system (with \(n\) degrees of freedom) are known as <em>generalized coordinates</em>, and their time-derivatives are known as <em>generalized velocities</em>, as is expected.
+While necessary, knowing the values of only the generalized cordinates of a system are not enough to fully determine the system’s <em>mechanical state</em>.
+For example, looking at a picture of billiard balls on a pool table is not enough to know the subsequent motion of all the balls on the table.</p>
+
+<p>It turns out that the combined set of generalized coordinates and velocities <em>are</em>, however, sufficient to determine the mechanical state of the system as a result of the <strong>principle of stationary action</strong> (also known as the <strong>principle of least action</strong>).
+Let’s suppose there exists some function \(L(\vec{q}, \dot{\vec{q}}, t)\) that describes a mechanical system, and that the system occupies two configurations \(\vec{q}({t_1})\) and \(\vec{q}({t_2})\) at two distinct times \(t_1\) and \(t_2\).
+Then, there also exists a functional \(\mathcal{S} \equiv \int_{t_1}^{t_2} L(\vec{q},\dot{\vec{q}},t)\) known as the <strong>action</strong>.</p>
+
+<p>The function \(L\) is known as the Lagrangian of the system and is commonly defined for closed, mechanical systems to be \(T-U\), where \(T\) and \(U\) represent the system’s kinetic and potential energy, respectively.
+The principle of stationary action states that the system will evolve in such a way that the action \(\mathcal{S}\) is unchanging (stationary), which can only occur at an extremum or saddle point.</p>
+
+<p>Now we start our derivation of the equations of motion.
+If we let \(\vec{q}(t)\) be a function for which the action functional is minimal, then we can arbitrarily replace \(\vec{q}(t)\) with a function</p>
+
+<p>\[
+  \vec{q}(t) + \vec{\delta q}(t)
+\]</p>
+
+<p>where \(\vec{\delta q}(t)\) is some arbitrary variation of \(\vec{q}(t)\) such that it is small and positive within \((t_1, t_2)\).
+Our variation requirement that \(\vec{q}(t_i)+\vec{q}(t_i) = \vec{q}(t_i)\) for \(t_i = t_1, t_2\) means that \(\delta\vec{q}(t_1) = \delta\vec{q}(t_2) = 0\)</p>
+
+<p>We could write write that \(\mathcal{S}[\vec{q}(t)+\delta\vec{q}(t)]-\mathcal{S}[\vec{q}(t)]=0\) to satisfy our condition of the action being stationary, but we elect to write it in the form</p>
+
+<p>\[
+  \delta\mathcal{S} = \delta \int_{t_1}^{t_2}L(\vec{q},\dot{\vec{q}},t) = 0
+\]</p>
+
+<p>We break down the problem into looking at one individual component for now, but we’ll combine everything into the whole picture later.</p>
+
+<p>\[
+  \int_{t_1}^{t_2}\left(\frac{\partial L}{\partial q}\delta q + \frac{\partial L}{\partial\dot q}\delta\dot{q}\right)\text{d}t = 0
+\]</p>
+
+<p>Keeping in mind the fact that \(\delta\dot{q}=\frac{d}{dt}(\delta q)\), we can integrate the second term by parts to get</p>
+
+<script type="math/tex; mode=display">\delta\mathcal{S}\left[q\right] = \left[\frac{\partial L}{\partial\dot{q}}\delta q\right]_{t_1}^{t_2} + \int_{t_1}^{t_2}\left(\frac{\partial L}{\partial q}-\frac{\text{d}}{\text{d}t}\frac{\partial L}{\partial \dot{q}}\right)\delta q\,\text{d}t = 0</script>
+
+<p>The first term in this equation must vanish, provided our earlier realization about \(\delta q(t)\) being zero at the endpoints of our interval.
+Additionally, the requirement that the action be stationary means that the integral on the right must be zero regardless of our choice of \(\delta q\) in our small change of \(\mathcal{S}\).
+The only solution is that the integrand itself is zero, which leaves us with</p>
+
+<p>\[
+\frac{\text{d}}{\text{d}t}\left(\frac{\partial L}{\partial \dot{q}}\right) - \frac{\partial L}{\partial q} = 0
+\]</p>
+
+<p>Naturally we can generalize this equation to some arbitrary \(n\) degrees of freedom, as we can vary the \(n\) different actions \(\mathcal{S}[q_{i}(t)]\). Then we obtain the \(n\) <strong>Euler-Lagrange equations</strong></p>
+
+<script type="math/tex; mode=display">\frac{\text{d}}{\text{d}t}\left(\frac{\partial L}{\partial \dot{q}_{i}}\right) - \frac{\partial L}{\partial q_{i}} = 0 \hspace{2em} \forall \, i \in \{1,2,...,n\})</script>
+
+<p>These equations are second-order differential equations that are an analogous formulation to Newton’s second law.
+In other words, “if the Lagrangian of a given mechanical system is known, the equations … give the relations between accelerations, velocities, and coordinates, i.e. they are the equations of motion of the system” <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>In the near future the Lagrangian formulation of mechanics will allow us to solve mechanical problems without having to focus on constraining forces in problems like beads on hoops, which helps simplify the math greatly.
+In the longer run I’ve been convinced that it reveals more elegance and symmetry about physical phenomena (something Noether something Feynman), but I’ve not enough knowledge or experience to actually comment on that first-hand.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Landau, L.D., and Lifshitz, E.M., <em>Course of Theoretical Physics: Volume 1, Mechanics</em>, 3 (1960).&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+&copy;  - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="/feed.xml">RSS</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
