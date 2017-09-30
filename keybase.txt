@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/greenbagels
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://greenbagels.github.io
+  * I am greenbagels (https://keybase.io/greenbagels) on keybase.
+  * I have a public key ASD5spdm1QHIaKqvs1d1ddBoKP1FHlgdKtec-lZfEpQTFwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f9b29766d501c868aaafb3577575d06828fd451e581d2ad79cfa565f129413170a",
+      "host": "keybase.io",
+      "kid": "0120f9b29766d501c868aaafb3577575d06828fd451e581d2ad79cfa565f129413170a",
+      "uid": "ff9befe39071530c43c3acbd69a1c419",
+      "username": "greenbagels"
+    },
+    "merkle_root": {
+      "ctime": 1506744939,
+      "hash": "99d89ac9e028f9701bc2ed277d2f810295a4e19e39e570dd25c715abede794fb7a7960f70b26f65979c654aa56bf70f93505890961cb91bd5abaf34deef603c1",
+      "hash_meta": "da2846357a33f83d778e805cc87705240cca016f37e9192d04a396f8b8062b0b",
+      "seqno": 1478508
+    },
+    "service": {
+      "hostname": "greenbagels.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.32"
+  },
+  "ctime": 1506744947,
+  "expire_in": 504576000,
+  "prev": "a03bf430e1e6f7790b55c3f434d12460d11726e4f9b6b16c4b5b9a1cf6a4e575",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+bKXZtUByGiqr7NXdXXQaCj9RR5YHSrXnPpWXxKUExcKp3BheWxvYWTFA1F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZjliMjk3NjZkNTAxYzg2OGFhYWZiMzU3NzU3NWQwNjgyOGZkNDUxZTU4MWQyYWQ3OWNmYTU2NWYxMjk0MTMxNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjliMjk3NjZkNTAxYzg2OGFhYWZiMzU3NzU3NWQwNjgyOGZkNDUxZTU4MWQyYWQ3OWNmYTU2NWYxMjk0MTMxNzBhIiwidWlkIjoiZmY5YmVmZTM5MDcxNTMwYzQzYzNhY2JkNjlhMWM0MTkiLCJ1c2VybmFtZSI6ImdyZWVuYmFnZWxzIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA2NzQ0OTM5LCJoYXNoIjoiOTlkODlhYzllMDI4Zjk3MDFiYzJlZDI3N2QyZjgxMDI5NWE0ZTE5ZTM5ZTU3MGRkMjVjNzE1YWJlZGU3OTRmYjdhNzk2MGY3MGIyNmY2NTk3OWM2NTRhYTU2YmY3MGY5MzUwNTg5MDk2MWNiOTFiZDVhYmFmMzRkZWVmNjAzYzEiLCJoYXNoX21ldGEiOiJkYTI4NDYzNTdhMzNmODNkNzc4ZTgwNWNjODc3MDUyNDBjY2EwMTZmMzdlOTE5MmQwNGEzOTZmOGI4MDYyYjBiIiwic2Vxbm8iOjE0Nzg1MDh9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZ3JlZW5iYWdlbHMuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzIifSwiY3RpbWUiOjE1MDY3NDQ5NDcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYTAzYmY0MzBlMWU2Zjc3OTBiNTVjM2Y0MzRkMTI0NjBkMTE3MjZlNGY5YjZiMTZjNGI1YjlhMWNmNmE0ZTU3NSIsInNlcW5vIjoxMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxED6gLZKZsyB51ljaUU1jiwcoN6Smr/Xd+tnyoSHoVNwBtwF2xzRGPYvxHx1XNJ6cnKOZWJPVmE+dFauh+bzQ1wCqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgm+gEXSSrP043+E5vLY3Gskj6uMbgCzYhVC1EbW2PnqyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/greenbagels
+
+==================================================================
