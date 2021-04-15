@@ -169,6 +169,10 @@ decays of the B meson in hopes of understanding more:
 - Belle/Belle II, KEKB/SuperKEKB, Japan
 - LHCb, CERN, France/Switzerland
 
+| ![LHCb logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Lhcb-logo-new.svg/1024px-Lhcb-logo-new.svg.png) |
+|:--:|
+| The logo for the LHCb experiment at CERN. |
+
 In the coming years, these experiments are expected to observe new forms of CP
 violation, hopefully leading to new physics supporting theories beyond the
 Standard Model. (In fact, LHCb recently announced results about the possibility
