@@ -142,7 +142,7 @@ classical picture: T-symmetry is built into quantum mechanics.
 
 The Standard Model of particle physics is built upon Quantum Field Theory, a
 relativistic extension of quantum mechanics that considers the fundamental physical
-entities to be quantum fields, with particles corresponding to excitations of
+entities of nature to be quantum fields, with particles corresponding to excitations of
 these fields. The three fundamental forces of nature described by the Standard
 Model &mdash; the strong, weak, and electromagnetic forces &mdash; are each
 described by their own individual quantum field theories. During the early
@@ -169,8 +169,13 @@ decays of the B meson in hopes of understanding more:
 - Belle/Belle II, KEKB/SuperKEKB, Japan
 - LHCb, CERN, France/Switzerland
 
+In the coming years, these experiments are expected to observe new forms of CP
+violation, hopefully leading to new physics supporting theories beyond the
+Standard Model. (In fact, LHCb recently announced results about the possibility
+of lepton flavor universality violation[^5], a signifcant but unrelated development).
 
 [^1]: Noether, E. (1918). "Invariante Variationsprobleme". Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen. Mathematisch-Physikalische Klasse. 1918: 235-257.
 [^2]: Sozzi, M.S. (2008). Discrete symmetries and CP violation. Oxford University Press. ISBN 978-0-19-929666-8.
 [^3]: Wu, C. S.; Ambler, E.; Hayward, R. W.; Hoppes, D. D.; Hudson, R. P. (1957). "Experimental Test of Parity Conservation in Beta Decay". Physical Review. 105 (4): 1413-1415.
 [^4]: Christenson, J. H.; Cronin, J. W.; Fitch, V. L.; Turlay, R. (1964). "Evidence for the 2π Decay of the $K_0^2$ Meson System". Physical Review Letters. 13 (4): 138.
+[^5]: CERN (2021). "Intriguing new result from the LHCb experiment at CERN". https://home.cern/news/news/physics/intriguing-new-result-lhcb-experiment-cern
