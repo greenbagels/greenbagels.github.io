@@ -105,12 +105,10 @@ electric charge distribution of any physical bodies. On a larger scale, this has
 the effect of negating charges, currents, electric fields, and magnetic fields.
 As a result, Maxwell's equations
 
-\\[
-    \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} \\
-    \nabla \cdot \mathbf{B} = 0 \\
-    \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\
-    \nabla \times \mathbf{B} = \mu_0(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial t})
-\\]
+$$\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}$$
+$$\nabla \cdot \mathbf{B} = 0$$
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
+$$\nabla \times \mathbf{B} = \mu_0(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial t})$$
 
 can be seen to be invariant under charge conjugation. In other words, classical
 electrodynamics is fundamentally charge-symmetric. In quantum mechanics, charge
